@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CarService {
 
-    public List getAvailableBrands(CarMake make){
+    public List getAvailableBrands(CarMake type){
 
         List brands = new ArrayList();
 
