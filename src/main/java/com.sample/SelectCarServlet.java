@@ -21,7 +21,7 @@ public class SelectCarServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String carType = req.getParameter("Type");
         CarService carService = new CarService();
-        CarMake c = CarMake.valueOf(carMake);
+        CarMake c = CarMake.valueOf(carType);
         List carBrands = carService.getAvailableBrands(c);
         req.setAttribute("brands", carBrands);
         RequestDispatcher view = req.getRequestDispatcher("result.jsp");
