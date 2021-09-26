@@ -12,15 +12,15 @@ public class CarService {
         List brands = new ArrayList();
 
         if(type.equals(CarMake.Honda)){
-            brands.add(“CRV”);
-            brands.add((“Accord”));
+            brands.add("CRV");
+            brands.add(("Accord"));
 
         }else if(type.equals(CarMake.VolksWagen)){
-            brands.add(“Jetta”);
-            brands.add(“Passat”);
+            brands.add("Jetta");
+            brands.add("Passat");
 
         }else if(type.equals(CarMake.BMW)){
-            brands.add(“X5”);
+            brands.add("X5");
 
         }else {
             brands.add("No Brand Available");
